@@ -10,7 +10,7 @@ require("dotenv").config
 app.use(express.urlencoded({extended:true}))
 app.use(express.json())
 app.use(cors())
-mongoose.connect('mongodb://localhost/compiler',{
+mongoose.connect('mongodb+srv://sagar-gajera:sagargajera2000@cluster0.3j6pv.mongodb.net/compiler?retryWrites=true&w=majority',{
     useNewUrlParser:true,
     useUnifiedTopology:true,
 },(err)=>{
